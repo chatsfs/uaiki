@@ -1,0 +1,95 @@
+.footer
+  padding: 30px 0
+  background-color: $footer-color
+  color: $black
+  h4
+    @media (max-width: $max-xs-screen)
+      text-align: center
+  ul.contact-list
+    list-style: none
+    margin: 0 0 0 30px
+    padding: 0
+    li
+      margin: 0
+      padding: 5px 0
+      margin: 0 auto
+      @media (max-width: $max-xs-screen)
+        width: 60%
+        text-align: center
+        position: relative
+    i.fa
+      display: inline
+      width: 8px
+      padding: 4px 5px
+      text-align: left
+
+  .btn-donate
+    color: $white
+    background-color: $orange
+    font-size: 20px
+    padding: 5px 40px
+    border-color: $orange
+    transition: .3s all ease
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,.3)
+    &:hover
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,.3)
+    &:active
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.3)
+    &:focus
+      outline: none
+  .footer-brand-image
+    width: 80%
+  .footer-social
+    margin: 0
+    padding: 0
+    text-align: center
+    li
+      margin: 0
+      padding: 0
+      display: inline-block
+      a
+        display: inline-block
+        padding: 10px 15px
+        font-size: 22px
+        .fa-facebook
+          color: #3b5998
+        .fa-youtube
+          color: #cc181e
+        .fa-instagram
+          color: #3b5998
+        .fa-twitter
+          color: #1da1f2
+  .other-links
+    text-align: center
+    .col-sm-6
+
+      border-left: 1px solid $gray
+      margin: 10px 0
+      text-align: center
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      &:last-child
+        border-right: 1px solid $gray
+      &:nth-child(2)
+        @media (max-width: $max-sm-screen) and (min-width: $min-sm-screen)
+          border-right: 1px solid $gray
+  .footer-buttons
+    margin: 0
+    padding: 0
+    li
+      margin: 0
+      padding: 0
+      display: inline-block
+      margin: 4px
+
+  .nav-footer-links
+    &>li>a
+
+      color: $black
+      text-decoration: underline
+      @media (max-width: $max-xs-screen)
+        text-align: center
+      &:hover, &:active, &:focus
+        background-color: transparent

@@ -1,0 +1,146 @@
+.selectable-modal
+  a img
+    border: 3px solid transparent
+  a.active img
+    border: 3px solid $orange
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.5)
+
+.bg-cream
+  background-color: $cream !important
+.bg-white
+  background-color: $white !important
+.bg-orange
+  background-color: $orange !important
+  color: $white
+.bg-green
+  background-color: $green !important
+  color: $white
+.bg-blue
+  background-color: $blue !important
+  color: $white
+.map
+  border: 5px solid $orange
+.btn-block-xs
+  @media (max-width: $max-xs-screen)
+    display: block
+    width: 100%
+.title-section
+  background-color: $white
+  color: $black
+  padding: 10px 35px
+  box-shadow: 0px 2px 3px 0 rgba(0,0,0,.25)
+  border-left: 8px solid $orange
+  margin: 5px 0
+  @media (max-width: $max-xs-screen)
+    text-align: center
+  //display: inline-block
+  h2, h3, h4
+    margin: 0
+    font-weight: 400
+  h2
+    font-size: 22px
+  h3
+    font-size: 18px
+  &.title-2
+    border-color: $green
+.btn-donate
+  color: $white
+  background-color: $orange
+  font-size: 16px
+  border-color: $orange
+  transition: .3s all ease
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,.3)
+  &:hover
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3)
+    color: $white
+    outline: none
+  &:active
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3)
+    color: $white
+    outline: none
+  &:focus
+    color: $white
+    outline: none
+  &:active:focus
+    outline: none
+
+.btn[disabled]
+  box-shadow: none
+  &:hover
+    box-shadow: none
+  &:active
+    box-shadow: none
+
+.btn-blue
+  color: $white
+  background-color: $blue
+  font-size: 16px
+  border-color: $blue
+  transition: .3s all ease
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,.3)
+  &:hover
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3)
+    color: $white
+    outline: none
+  &:active
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3)
+    color: $white
+    outline: none
+  &:focus
+    color: $white
+    outline: none
+  &:active:focus
+    outline: none
+.btn-subscribe
+  background-color: $black
+  color: $white
+  font-size: 16px
+  padding-left: 40px
+  padding-right: 40px
+  transition: .3s all ease
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0)
+  &:hover
+    color: $white
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.5)
+  &:active
+    color: $white
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.4)
+  &:focus
+    color: $white
+  &:focus:active
+    outline: none
+    color: $white
+  &:focus, &:active, &:hover
+    outline: none
+
+.img-with-hover
+  position: relative
+  cursor: pointer
+  &:hover, &:focus
+    .hover
+      opacity: 1
+  .hover
+    position: absolute
+    transition: .3s all ease
+    opacity: 0
+    top: 0px
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    padding: 20px
+    background-color: rgba(0,0,0,.4)
+    color: $white
+.panel, .panel p
+  border-radius: 10px
+  line-height: 32px
+  font-size: 16px
+
+#donate-page, #take-page, #contact-page
+  background-color: $cream
+
+#take-page
+  .license-title
+    font-size: 36px
+  .license-text
+    font-size: 20px

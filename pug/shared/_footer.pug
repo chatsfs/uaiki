@@ -1,0 +1,78 @@
+footer.footer
+  .container
+    .row
+      .col-sm-12
+        .text-center
+          ul.footer-buttons
+            li
+              a.btn.btn-subscribe(href="#" data-target="#volunteer-modal" data-toggle="modal" data-lang="footer.volunteer")  Volunteer
+            li
+              a.btn.btn-subscribe(href="contact.html" data-lang="footer.contact")  Contact
+
+    .row.pad-top-30
+      .col-sm-4
+        ul.contact-list
+          li
+            i.fa.fa-map-marker
+            | Archstone Avenir
+            br
+            | 101 Canal St. MA 02114. USA
+          li
+            i.fa.fa-mobile-phone
+            | +1(857)350-0158
+          li
+            i.fa.fa-envelope-o
+            a(href="mailto:solutions@uaiki.org") solutions@uaiki.org
+
+        p.text-center(data-lang="footer.copyright") &copy; 2016 Üaiki Global Initiative. All rights reserved
+      .col-sm-4
+        ul.contact-list
+          li
+            i.fa.fa-map-marker
+            | Polo Hunt Business Center
+            br
+            | Av. Encalada 1388 Off. 1004, Lima, Perú
+          li
+            i.fa.fa-mobile-phone
+            | +511-368-2187
+      .col-sm-4
+        .pad-top-10.text-center
+          img.footer-brand-image(src="img/11.png")
+
+      .clearfix
+
+.modal.fade#volunteer-modal(role="dialog" tabindex="-1")
+  .modal-dialog.modal-lg(role="document")
+    .modal-content
+      .modal-header.bg-blue
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") &times;
+        h3.modal-title.text-center( data-lang="modal.volunteer.title") Volunteer / Intern and Career
+      .modal-body.bg-cream
+        .row.pad-vertical-20
+          .col-sm-10.col-sm-push-1
+            form.form#volunteer-form
+              .form-group
+                label( data-lang="modal.volunteer.name" for="volunteer-name") Name
+                input.form-control#volunteer-name(type="text" name="name")
+              .form-group
+                label( data-lang="modal.volunteer.email" for="#volunteer-email") E-mail
+                input.form-control#volunteer-email(type="email" name="email")
+              .form-group
+                label( data-lang="modal.volunteer.subject" for="#volunteer-subject") Asunto
+                input.form-control#volunteer-subject(type="email" name="subject")
+              .form-group
+                label( data-lang="modal.volunteer.message" for="volunteer-message") Message:
+                textarea.form-control#volunteer-message(name="message")
+              .form-group
+                label(data-lang="modal.volunteer.aditional-text")
+              .row
+                //
+                  .col-sm-12
+                    label( data-lang="modal.more")  More Info:
+                  .col-sm-6
+                    button.btn.btn-blue.pad-horizontal-30.btn-block-xs( data-lang="modal.file")  Upload File
+                  .clearfix.visible-xs
+                  .pad-top-10.visible-xs
+                .col-sm-12.text-right
+                  button.btn.btn-donate.pad-horizontal-30.btn-block-xs#volunteer-submit(type="submit" data-lang="modal.volunteer.send")  Send

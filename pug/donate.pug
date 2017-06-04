@@ -1,0 +1,115 @@
+doctype html
+html(lang="es")
+  head
+    include ./shared/_head.pug
+
+  body#donate-page
+    #load
+      .load-image
+        img(src="img/11.png")
+        span Loading...
+    nav.navbar.navbar-default.navbar-static-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        .navbar-brand.without-form
+          .brand-image
+            a(href="/")
+              img(src="img/11.png")
+
+        #navbar.collapse.navbar-collapse
+          include ./shared/_navbarcommon.pug
+
+
+    section.pad-top-80.pad-top-xs-0
+      .container
+        form
+          .row.pad-top-20
+            .col-sm-7
+              h4 Ayudanos a cambiar el mundo.
+              p ¡Tu apoyo a Uaiki Global Initiative hara la diferencia!
+              p Al hacer una donacion a UGI nos estas ayudando a llevar nuestro sistema educativo a las comunidades mas comprometidas del planeta.
+              p ¡Dejemos que el conocimiento sea la clave hacia el empoderamiento de quienes mas lo necesitan!
+
+            .col-sm-5
+              img(src="img/donate.jpg" width="100%")
+          .row.pad-top-20
+            .col-sm-12
+              h4 Enter A Gift Amount:
+
+          .row
+            .col-sm-12
+              .panel.panel-warning
+                .panel-body
+                  h5 I want to become a monthly supporter with a gift of:
+                  input#don-10-m(type="radio" name="donation" value="10M")
+                  label.margin-right-20(for="don-10-m") $25
+                  input#don-20-m(type="radio" name="donation" value="20M")
+                  label.margin-right-20(for="don-20-m") $50
+                  input#don-30-m(type="radio" name="donation" value="30M")
+                  label.margin-right-20(for="don-30-m") $100
+                  input#don-50-m(type="radio" name="donation" value="50M")
+                  label.margin-right-20(for="don-50-m") $500
+
+                  input(type="radio" name="donation" value="custom-m")
+                  label(for="don-custom-m") $
+                  input#don-custom-m(type="text" size="8" name="don-custom-m")
+                  label /month
+                  p Monthly giving is the best giving option for both Üaiki and out supporters - it allows us to have a dependable base of support and save time, banking fees and paper by not having to send supporters future reminders and renewal notices.
+
+          .row
+            .col-sm-12
+              h5 Or make a single donation in the amout of:
+              input#don-25(type="radio" name="donation" value="25")
+              label.margin-right-20(for="don-25") $25
+              input#don-50(type="radio" name="donation" value="50")
+              label.margin-right-20(for="don-50") $50
+              input#don-100(type="radio" name="donation" value="100")
+              label.margin-right-20(for="don-100") $100
+              input#don-500(type="radio" name="donation" value="500")
+              label.margin-right-20(for="don-500") $500
+
+              input(type="radio" name="donation" value="custom")
+              label(for="don-custom") $
+              input#don-custom(type="text" size="8" name="don-custom")
+
+          .row.pad-vertical-40
+            .col-sm-push-4.col-sm-4
+              .title-section.title-2.text-center
+                h2 Donation Packs
+            .col-sm-12
+              .row.pad-top-20
+                .col-sm-3
+                  label(for="don-100-p" style="width: 100%;")
+                    img(src="img/donate1.png" width="100%")
+                  .pad-top-20.text-center
+                    input#don-100-p(type="radio" name="donation" value="100P")
+                    label.margin-right-20(for="don-100-p") $100
+
+                .col-sm-3
+                  label(for="don-500-p" style="width: 100%;")
+                    img(src="img/donate2.png" width="100%")
+                  .pad-top-20.text-center
+                    input#don-500-p(type="radio" name="donation" value="500P")
+                    label.margin-right-20(for="don-500-p") $500
+                .col-sm-3
+                  label(for="don-4000-p" style="width: 100%;")
+                    img(src="img/donate3.png" width="100%")
+                  .pad-top-20.text-center
+                    input#don-4000-p(type="radio" name="donation" value="4000P")
+                    label.margin-right-20(for="don-4000-p") $4000
+                .col-sm-3
+                  label(for="don-5000-p" style="width: 100%;")
+                    img(src="img/donate4.png" width="100%")
+                  .pad-top-20.text-center
+                    input#don-5000-p(type="radio" name="donation" value="5000P")
+                    label.margin-right-20(for="don-5000-p") $5000
+
+    include ./shared/_footer.pug
+
+    include ./shared/_scripts.pug

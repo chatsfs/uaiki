@@ -1,0 +1,237 @@
+
+.navbar-links
+  @media (min-width: $min-sm-screen) and (max-width: 850px)
+    width: 280px
+
+.header-links
+  position: absolute
+  right: 120px
+  top: 70px
+  @media (max-width: $max-sm-screen)
+    top: 120px
+    right: 10px
+  @media (max-width: $max-xs-screen)
+    position: relative
+    top: 0
+    right: 0
+  li
+    display: inline-block
+    padding: 0 20px
+    @media (max-width: $max-sm-screen)
+      padding: 0 5px
+    @media (max-width: $max-xs-screen)
+      display: block
+      text-align: center
+    a
+      color: $white
+      background-color: rgba(100,100,100,.9)
+      border: 3px solid rgba(255,255,255,.8)
+      padding: 7px 25px
+      border-radius: 50px
+      font-weight: 700
+      font-size: 16px
+      transition: .3s all ease
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.5)
+      &:hover
+        background-color: rgba(100,100,100,.9)
+      &:active
+        background-color: rgba(100,100,100,.9)
+      @media (max-width: $max-xs-screen)
+        background-color: transparent
+        box-shadow: none
+        border: none
+        border-radius: 0
+        &:hover
+          box-shadow: none
+        &:active
+          box-shadow: none
+
+.navbar-default
+  background-color: $black
+  color: $gray
+  min-height: auto
+  border: none
+  margin: 0
+  @media (max-width: $max-xs-screen)
+    background-color: $cream
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.5)
+  .navbar-brand
+    z-index: 5000
+    width: 300px
+    position: absolute
+    background: $white
+    height: auto
+    padding: 0
+    padding-right: 0
+
+    &.without-form
+      height: 140px
+
+      &::after
+        border-top: 70px solid $white
+        border-left: 20px solid $white
+        border-right: 20px solid transparent
+        border-bottom: 70px solid transparent
+        @media (max-width: $max-xs-screen)
+          border: none
+    &::after
+      position: absolute
+      display: block
+      content: ' '
+      //background-color: $white
+      right: -40px
+      top: 0
+      border-top: 65px solid $white
+      border-left: 20px solid $white
+      border-right: 20px solid transparent
+      border-bottom: 65px solid transparent
+      z-index: 5001
+    @media (max-width: $max-sm-screen)
+      width: 280px
+    @media (max-width: $max-xs-screen)
+      position: absolute
+      top: 0
+      left: 0
+      height: 30px
+      padding: 10px
+      width: auto
+      height: auto
+      background: transparent
+      &::after
+        border: none
+    .brand-image
+      text-align: center
+      //padding-top: 20px
+      padding: 30px
+      img
+        width: 230px
+      @media (max-width: $max-xs-screen)
+        padding-top: 0
+        img
+          width: auto
+          height: 30px
+    .navbar-donate-form
+      background-color: $black
+      padding: 10px
+      color: $white
+      @media (max-width: $max-xs-screen)
+        display: none
+
+      label
+        font-size: 14px
+        font-weight: 700
+      .col-sm-12
+        padding-left: 0
+        padding-right: 5px
+      .col-sm-4
+        padding-left: 0
+        padding-right: 5px
+        &:last-child
+          padding-right: 0
+      .form-control
+        color: $black
+        padding: 3px 6px
+        height: 30px
+        border: 1px solid $orange
+        border-radius: 3px
+      .btn-donate
+        color: $white
+        height: 30px
+        padding: 3px
+        background-color: $orange
+        border-color: $orange
+        transition: .3s all ease
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,.3)
+        &:hover
+          box-shadow: 0 3px 5px 0 rgba(0,0,0,.3)
+        &:active
+          box-shadow: 0 1px 2px 0 rgba(0,0,0,.3)
+        &:focus
+          outline: none
+      .input-price
+        input
+          padding-left: 25px
+        position: relative
+        &::after
+          position: absolute
+          content: '$'
+          font-size: 16px
+          font-weight: 400
+          left: 10px
+          top: 4px
+          display: block
+          color: $black
+          z-index: 5001
+
+  .navbar-nav
+    @media (max-width: $max-xs-screen)
+      li
+        text-align: center
+      .social
+        width: 32%
+        display: inline-block
+        text-align: center
+    &>li>a
+      color: lighten($gray, 30%)
+      padding: 6px 10px
+      font-size: 22px
+      border-left: 1px solid $gray
+      transition: .3s all ease
+
+      &:focus
+        color: lighten($gray, 30%)
+      &:hover
+        color: lighten($gray, 70%)
+      &:active
+        color: lighten($gray, 50%)
+      @media (max-width: $max-xs-screen)
+        border-left: none
+        color: $black
+        &:focus
+          color: $gray
+        &:hover
+          color: $black
+        &:active
+          color: $black
+      i.fa
+        padding: 2px
+
+  .language-form
+    padding: 6px 15px
+    border-left: 1px solid $gray
+    @media (max-width: $max-xs-screen)
+      border-left: none
+  .navbar-form
+    margin: 0
+    select.form-control
+      height: 26px
+      background-color: $black
+      color: lighten($gray, 30%)
+      border: none
+      &:focus
+        outline: none
+        box-shadow: none
+    @media (max-width: $max-xs-screen)
+      select.form-control
+        background: $cream
+        height: auto
+        color: $black
+        border-left: none
+        text-align: center
+      img
+        display: none
+
+  .navbar-donate
+    &>li>a
+      height: 100%
+      font-size: 21px
+      padding: 9px 25px
+      font-weight: 700
+      background-color: $orange
+      color: $white
+      border-left-color: $orange
+      &:hover, &:active
+        background-color: darken($orange, 2%)
+        color: $white
+      &:focus
+        outline: none

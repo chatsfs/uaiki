@@ -1,0 +1,53 @@
+doctype html
+html(lang="es")
+  head
+    include ./shared/_head.pug
+
+  body#contact-page
+    #load
+      .load-image
+        img(src="img/11.png")
+        span Loading...
+    nav.navbar.navbar-default.navbar-static-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        .navbar-brand.without-form
+          .brand-image
+            a(href="/")
+              img(src="img/11.png")
+
+        #navbar.collapse.navbar-collapse
+          include ./shared/_navbarcommon.pug
+
+    .container
+      .row.pad-vertical-40
+        .col-sm-push-4.col-sm-4
+          .title-section.text-center
+            h2(data-lang="contact-page.title") Contact Us
+
+      .row
+        .col-sm-4
+          img(src="img/31.png" width="100%")
+        .col-sm-8
+          form.form#contact-form
+            .form-group
+              label( data-lang="modal.name" for="contact-name") Name
+              input.form-control#contact-name(type="text" name="name")
+            .form-group
+              label( data-lang="modal.email" for="#contact-email") E-mail
+              input.form-control#contact-email(type="email" name="email")
+            .form-group
+              label( data-lang="modal.message" for="contact-message") Message:
+              textarea.form-control#contact-message(name="message" style="height: 200px")
+            .form-group.text-right
+              button.btn.btn-donate.pad-horizontal-30.btn-block-xs#contact-submit(type="submit" data-lang="modal.send")  Send
+
+    include ./shared/_footer.pug
+
+    include ./shared/_scripts.pug

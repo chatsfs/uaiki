@@ -1,0 +1,111 @@
+
+.text-right
+  text-align: right  !important
+.text-center
+  text-align: center !important
+.text-left
+  text-align: left !important
+
+.text-red
+  color: #ff5555
+.text-green
+  color: #b4ff54
+
+.full-height
+  height: 100%
+  min-height: 100%
+
+.vertical-center
+  display: flex
+  align-items: center
+
+.flex-column
+  flex-direction: column
+  &.vertical-center
+    justify-content: center
+
+.clearfix
+  clear: both
+  display: block
+
+.block
+  display: block
+  width: 100%
+
+.wordwrap
+  word-wrap: break-word
+
+.low-margin-vert
+  margin-top: 5px
+  margin-bottom: 5px
+.no-margin
+  margin: 0 0 0 0 !important
+.nowrap
+  white-space: nowrap
+
+@for $i from 0 through 10
+  .pad-top-#{$i*10}
+    padding-top: $i*10px
+  .pad-bottom-#{$i*10}
+    padding-bottom: $i*10px
+  .pad-vertical-#{$i*10}
+    padding-top: $i*10px
+    padding-bottom: $i*10px
+  .pad-left-#{$i*10}
+    padding-left: $i*10px
+  .pad-right-#{$i*10}
+    padding-right: $i*10px
+  .pad-horizontal-#{$i*10}
+    padding-left: $i*10px
+    padding-right: $i*10px
+  .margin-top-#{$i*10}
+    margin-top: $i*10px
+  .margin-bottom-#{$i*10}
+    margin-bottom: $i*10px
+  .margin-vertical-#{$i*10}
+    margin-top: $i*10px
+    margin-bottom: $i*10px
+  .margin-left-#{$i*10}
+    margin-left: $i*10px
+  .margin-right-#{$i*10}
+    margin-right: $i*10px
+  .margin-horizontal-#{$i*10}
+    margin-left: $i*10px
+    margin-right: $i*10px
+
+
+  // XS Screen
+  @media screen and (max-width: $max-xs-screen)
+  	.pull-xs-none
+  		float: none !important
+  	.pull-xs-left
+  		float: left !important
+  	.pull-xs-right
+  		float: right !important
+
+  	.col-xs-only-12
+  		width: 100%
+  		position: relative
+  		float: left
+  	.footer
+  		height: auto
+  		.container
+  			padding-top: 15px
+  			padding-bottom: 15px
+  		&-copyright
+  			text-align: center
+  	@for $i from 0 through 10
+  		.pad-top-xs-#{$i*10}
+  			padding-top: $i*10px
+  		.pad-bottom-xs-#{$i*10}
+  			padding-bottom: $i*10px
+  		.pad-vertical-xs-#{$i*10}
+  			padding-top: $i*10px
+  			padding-bottom: $i*10px
+  		.pad-left-xs-#{$i*10}
+  			padding-left: $i*10px
+  		.pad-right-xs-#{$i*10}
+  			padding-right: $i*10px
+  		.pad-horizontal-xs-#{$i*10}
+  			padding-left: $i*10px
+  			padding-right: $i*10px

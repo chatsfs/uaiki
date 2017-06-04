@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- #### META tags ####-->
+    <!-- Meta tags browser-->
+    <meta charset="utf-8">
+    <meta http.equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta tags Description-->
+    <meta name="description" content="Uaiki Global Initiative">
+    <meta name="author" content="NucleusApps">
+    <meta name="keywords" content="uaiki, global, initiative, uaiki global initiative, UaikiGI, UGI, ngo, ong, Peru, Uaiki tech, UCloud">
+    <!-- Meta tags Open Graph-->
+    <!-- -URL BASE-->
+    <meta property="og:url" content="www.uaiki.org">
+    <!-- -TITULO DE LA APLICACION-->
+    <meta property="og:site_name" content="Uaiki GI">
+    <!-- -TITULO DE LA PAGINA-->
+    <meta property="og:title" content="Uaki Global Initiative">
+    <!-- -DESCRIPCION-->
+    <meta property="og:description" content="Uaiki Global Initiative">
+    <!-- -UBICACIÓN-->
+    <meta property="og:locale" content="es_PE">
+    <!-- -IMAGEN REPRESENTATIVA-->
+    <meta property="og:image" content="img/15.png">
+    <!-- #### TITLE ####-->
+    <title>Uaiki Global Initiative</title>
+    <!-- #### ICON ####-->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </head>
+  <body>
+    <div id="load">
+      <div class="load-image"><img src="img/11.png"><span>Loading...</span></div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="navbar-brand">
+          <div class="brand-image"><a href="/"><img src="img/11.png"></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav header-links">
+            <li><a href="#who-are-we" data-lang="header-links.whoarewe">Who are we?</a></li>
+            <li><a href="#our-strategy" data-lang="header-links.strategy">Our Strategy</a></li>
+            <li><a href="#benefits" data-lang="header-links.benefits">Benefits</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="carousel slide" id="carousel-header" data-ride="carousel">
+            <!-- Indicators-->
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carousel-header" data-slide-to="0"></li>
+              <li data-target="#carousel-header" data-slide-to="1"></li>
+              <li data-target="#carousel-header" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="img" data-lang-img="home.img1"></div>
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <div class="img" data-lang-img="home.img2"></div>
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <div class="img" data-lang-img="home.img3"></div>
+                <div class="carousel-caption"></div>
+              </div>
+            </div>
+            <!-- Controls--><a class="left carousel-control" href="#carousel-header" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-header" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="who-are-we">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="title-section">
+              <h2 data-lang="whoarewe.title">Who are we?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="pad-top-20">
+          <div class="panel panel-default panel-who-are-we">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-6 who-text">
+                  <p data-lang="whoarewe.text1">Üaiki Global Initiative es organizacion de beneficio social fundada en la ciudad de Cambridge, Massachussets, por emprendedores con raises provenientes de distintas partes del globo.</p>
+                </div>
+                <div class="col-sm-6 image-full"><img src="img/who1.jpg" width="100%"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 image-full"><img src="img/who2.jpg" width="100%"></div>
+                <div class="col-sm-6 who-text">
+                  <p data-lang="whoarewe.text2">ÜGI usa el desarrollo tecnologico para conectarse con las comunidades más compromeditas del planeta. Confiamos que el acceso a informacion y educacion de calidad sera clave en el surgimiento millones de personas que hasta el dia de hoy viven completamente marginadas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12"></div>
+        </div>
+        <h2 class="text-center" data-lang="newsletter.title">STAY INFORMED. SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <form class="form" id="subscribe-newsletter-form" method="post">
+          <div class="row">
+            <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 form-group">
+              <input class="form-control" id="email-newsletter" type="email" name="email" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 form-group text-center">
+              <button class="btn btn-subscribe btn-block-xs" id="button-newsletter" type="submit" data-lang="newsletter.button">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="our-strategy">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="title-section">
+              <h2 data-lang="strategy.title">Our Strategy</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-top-30 pad-top-xs-10">
+          <div class="col-sm-4 pad-top-xs-20">
+            <div class="title-section title-2">
+              <h3 class="text-center" data-lang="strategy.software">Software</h3>
+            </div>
+            <div class="pad-top-30 pad-top-xs-10">
+              <div class="img-with-hover"><img src="img/sw.png" width="100%">
+                <div class="hover">
+                  <h3 class="text-center">Software</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 pad-top-xs-20">
+            <div class="title-section title-2">
+              <h3 class="text-center" data-lang="strategy.hardware">Hardware</h3>
+            </div>
+            <div class="pad-top-30 pad-top-xs-10">
+              <div class="img-with-hover"><img src="img/hw.png" width="100%">
+                <div class="hover">
+                  <h3 class="text-center">Hardware</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 pad-top-xs-20">
+            <div class="title-section title-2">
+              <h3 class="text-center" data-lang="strategy.clc">CLC</h3>
+            </div>
+            <div class="pad-top-30 pad-top-xs-10">
+              <div class="img-with-hover"><img src="img/clc.jpg" width="100%">
+                <div class="hover">
+                  <h3 class="text-center">CLC</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-top-40">
+          <div class="col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bAMNErzPrQA" width="100%" height="inherit"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="habitat">
+      <div class="container">
+        <div class="row pad-top-40">
+          <div class="col-sm-12 text-center"><img class="habitat-title" src="img/13.png"></div>
+        </div>
+        <div class="row pad-top-20">
+          <div class="col-sm-7"><img src="img/35.png" width="100%"></div>
+          <div class="col-sm-5">
+            <div class="pad-top-80 pad-top-xs-10 text-center"><img data-lang-img="habitat.exp" width="90%"></div>
+          </div>
+        </div>
+        <div class="row pad-top-20">
+          <div class="col-sm-12">
+            <div class="panel panel-default panel-habitat">
+              <div class="panel-body">
+                <p class="text-center" data-lang="habitat.text">A traves del programa Habitat 8 apuntamos a adaptar nuestro sistema para asi poder ser efectivos sin importar el tipo de comunidad marginal. Hemos identificado que el pais con mas zonas de vida y mas tipos de climas existentes en el planeta es el Peru.  Se han generado distintas categorias que logran representar la totalidad de escenarios donde existe la marginacion a lo largo del mundo en tan solo 8 zonas fragiles. Todas estas estan presentes en el Peru por lo que lo convierten en la plataforma de prueba ideal para el programa Habitat 8.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ugni">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center"><img class="ugni-title" src="img/15.png"></div>
+        </div>
+        <div class="row pad-top-30">
+          <div class="col-sm-4"><img src="img/17.png" width="100%"></div>
+          <div class="col-sm-8"><img src="img/16.png" width="100%"></div>
+          <div class="col-sm-12">
+            <div class="panel panel-default bg-cream">
+              <div class="panel-body">
+                <p class="pad-horizontal-20 text-center" data-lang="ugni.text">Una vez concluido con exito el programa Habitat 8 se habra probado que el sistema UGI funciona correctamente en todo tipo de zona fragil. Buscamos expandirnos a nivel global pudiendo elevar la calidad de vida de comunidades que representan los niveles mas altos de marginacion a lo largo del mundo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center"><img class="ugni-progress" src="img/18.png"></div>
+          <div class="col-sm-12">
+            <p class="slogan text-center" data-lang="ugni.slogan">"Nuestro sistema aprovecha al maximo la tecnologia para asi poder ser implementado a gran escala a lo largo del mundo"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pad-top-20" id="benefits">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="title-section">
+              <h2 data-lang="benefits.title">Benefist</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-top-30">
+          <div class="col-sm-6 col-md-3">
+            <div class="text-center benefits-item"><img src="img/19.png" width="220px">
+              <h4 class="text-center" data-lang="benefits.card1">Well Being</h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="text-center benefits-item"><img src="img/20.png" width="220px">
+              <h4 class="text-center" data-lang="benefits.card2">Emporwerment</h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="text-center benefits-item"><img src="img/21.png" width="220px">
+              <h4 class="text-center" data-lang="benefits.card3">Development</h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="text-center benefits-item"><img src="img/22.png" width="220px">
+              <h4 class="text-center" data-lang="benefits.card4">Skills</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pad-top-20" id="partnerships">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="title-section">
+              <h2 data-lang="partnerships.title">Partnerships</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-top-30">
+          <div class="col-sm-12">
+            <div class="panel panel-default panel-partners">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-12 text-center"><img class="partner-img" src="img/24.png"></div>
+                </div>
+                <div class="row pad-top-20 pad-top-xs-0">
+                  <div class="col-sm-6 text-center"><img class="partner-img" src="img/25.png"></div>
+                  <div class="col-sm-6 text-center"><img class="partner-img" src="img/26.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="volunteer">
+      <div class="container">
+        <h4 class="text-center" data-lang="volunteer.title">Volunteer / Intern and Career</h4>
+        <p class="text-center"><span data-lang="volunteer.text-before"> We offer opportunities for people that want to create real impact [</span><a href="#" data-toggle="modal" data-target="#volunteer-modal" data-lang="volunteer.link">Click here</a><span data-lang="volunteer.text-after"> ] for contact us</span></p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+              <ul class="footer-buttons">
+                <li><a class="btn btn-subscribe" href="#" data-target="#volunteer-modal" data-toggle="modal" data-lang="footer.volunteer"> Volunteer</a></li>
+                <li><a class="btn btn-subscribe" href="contact.html" data-lang="footer.contact"> Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-top-30">
+          <div class="col-sm-4">
+            <ul class="contact-list">
+              <li><i class="fa fa-map-marker"></i>Archstone Avenir<br>101 Canal St. MA 02114. USA</li>
+              <li><i class="fa fa-mobile-phone"></i>+1(857)350-0158</li>
+              <li><i class="fa fa-envelope-o"></i><a href="mailto:solutions@uaiki.org">solutions@uaiki.org</a></li>
+            </ul>
+            <p class="text-center" data-lang="footer.copyright">&copy; 2016 Üaiki Global Initiative. All rights reserved</p>
+          </div>
+          <div class="col-sm-4">
+            <ul class="contact-list">
+              <li><i class="fa fa-map-marker"></i>Polo Hunt Business Center<br>Av. Encalada 1388 Off. 1004, Lima, Perú</li>
+              <li><i class="fa fa-mobile-phone"></i>+511-368-2187</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <div class="pad-top-10 text-center"><img class="footer-brand-image" src="img/11.png"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="volunteer-modal" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-blue">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title text-center" data-lang="modal.volunteer.title">Volunteer / Intern and Career</h3>
+          </div>
+          <div class="modal-body bg-cream">
+            <div class="row pad-vertical-20">
+              <div class="col-sm-10 col-sm-push-1">
+                <form class="form" id="volunteer-form">
+                  <div class="form-group">
+                    <label data-lang="modal.volunteer.name" for="volunteer-name">Name</label>
+                    <input class="form-control" id="volunteer-name" type="text" name="name">
+                  </div>
+                  <div class="form-group">
+                    <label data-lang="modal.volunteer.email" for="#volunteer-email">E-mail</label>
+                    <input class="form-control" id="volunteer-email" type="email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label data-lang="modal.volunteer.subject" for="#volunteer-subject">Asunto</label>
+                    <input class="form-control" id="volunteer-subject" type="email" name="subject">
+                  </div>
+                  <div class="form-group">
+                    <label data-lang="modal.volunteer.message" for="volunteer-message">Message:</label>
+                    <textarea class="form-control" id="volunteer-message" name="message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label data-lang="modal.volunteer.aditional-text"></label>
+                  </div>
+                  <div class="row">
+                    <!--
+                    .col-sm-12
+                      label( data-lang="modal.more")  More Info:
+                    .col-sm-6
+                      button.btn.btn-blue.pad-horizontal-30.btn-block-xs( data-lang="modal.file")  Upload File
+                    .clearfix.visible-xs
+                    .pad-top-10.visible-xs
+                    -->
+                    <div class="col-sm-12 text-right">
+                      <button class="btn btn-donate pad-horizontal-30 btn-block-xs" id="volunteer-submit" type="submit" data-lang="modal.volunteer.send"> Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("user_XCkhVus3oPZ9xf2vCeLjH");
+      })();
+    </script>
+    <script src="/js/emailjs.js"></script>
+  </body>
+</html>

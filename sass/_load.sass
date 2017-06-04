@@ -1,0 +1,45 @@
+#load
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: $cream
+  z-index: 100000
+  opacity: 1
+  transition: 1s opacity ease
+  .load-image
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    -webkit-animation: loading 2s infinite
+    animation: loading 2s infinite
+    img
+      width: 300px
+    span
+      display: block
+      padding: 10px
+      font-weight: 700
+      font-size: 16px
+  &.out
+    opacity: 0
+@-webkit-keyframes loading
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+@keyframes loading
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1

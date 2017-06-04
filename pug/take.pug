@@ -1,0 +1,226 @@
+doctype html
+html(lang="es")
+  head
+    include ./shared/_head.pug
+
+  body#take-page
+    #load
+      .load-image
+        img(src="img/11.png")
+        span Loading...
+    nav.navbar.navbar-default.navbar-static-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        .navbar-brand.without-form
+          .brand-image
+            a(href="/")
+              img(src="img/11.png")
+
+        #navbar.collapse.navbar-collapse
+          include ./shared/_navbarcommon.pug
+
+    section#volunteer
+      .container.pad-vertical-10
+        h4.text-center( data-lang="volunteer.title") Volunteer / Intern and Career
+        p.text-center
+          span( data-lang="volunteer.text-before")  We offer opportunities for people that want to create real impact [
+          a(href="#" data-toggle="modal" data-target="#volunteer-modal" data-lang="volunteer.link") Click here
+          span( data-lang="volunteer.text-after")  ] for contact us
+
+    .container
+      .row.pad-vertical-40
+        .col-sm-4
+          .title-section.text-center
+            h2(data-lang="take-page.title") Take Action
+    section
+      .container
+        .row.pad-top-20
+          .col-sm-3
+            a(href="#" data-target="#software-modal" data-toggle="modal")
+              img(src="img/take-sw.png" width="100%")
+          .col-sm-3
+            a(href="#" data-target="#kit-modal" data-toggle="modal")
+              img(src="img/take-kit.png" width="100%")
+          .col-sm-3
+            a(href="#" data-target="#ulc-modal" data-toggle="modal")
+              img(src="#" width="100%" height="300px")
+          .col-sm-3
+            a(href="#" data-target="#home-modal" data-toggle="modal")
+              img(src="#" width="100%" height="300px")
+        .row.pad-top-60
+          .col-sm-12.text-center
+            button.btn.btn-donate.btn-block-xs.pad-horizontal-40#collapse-form-button(data-lang="take-page.propose-project" type="button" data-toggle="collapse" data-target="#collapse-form" aria-expanded="false" aria-controls="collapse-form") Proponer
+          .col-sm-12.pad-top-20
+            .collapse#collapse-form
+              .panel.panel-default
+                .panel-body
+                  form.form#propose-project-form
+                    .row
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.name" for="name") Nombre Completo
+                        input.form-control#name(type="text" name="name")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.email" for="email") Correo Electrónico
+                        input.form-control#email(type="email" name="email")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.name-com" for="name-com") Nombre de la Comunidad
+                        input.form-control#name-com(type="text" name="name-com")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.fragil" for="fragil") Tipo de zona frágil
+                        input.form-control#fragil(type="text" name="fragil")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.population" for="population") Población
+                        input.form-control#population(type="text" name="population")
+                    .row
+                      .col-sm-12
+                        label(data-lang="take-page.level-marg") Nivel de marginación (5 es el mayor):
+                      .col-sm-12
+                        label(for="marg-1") 1
+                        input#marg-1(type="radio" name="level-marg")
+                        label.margin-left-10(for="marg-2") 2
+                        input#marg-2(type="radio" name="level-marg")
+                        label.margin-left-10(for="marg-3") 3
+                        input#marg-3(type="radio" name="level-marg")
+                        label.margin-left-10(for="marg-4") 4
+                        input#marg-4(type="radio" name="level-marg")
+                        label.margin-left-10(for="marg-5") 5
+                        input#marg-5(type="radio" name="level-marg")
+                    .row
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.district" for="district") Distrito
+                        input.form-control#district(type="text" name="district")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.province" for="province") Provincia
+                        input.form-control#province(type="text" name="province")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.state" for="state") Departamento
+                        input.form-control#state(type="text" name="state")
+                      .form-group.col-sm-6
+                        label(data-lang="take-page.country" for="country") País
+                        input.form-control#country(type="text" name="country")
+                    .row
+                      .col-sm-12
+                        label(data-lang="take-page.point-map") Indique en el mapa el lugar aproximado:
+                        input#location(type="hidden" name="location")
+                      .col-sm-12
+                        #map-2(style="height: 450px")
+                      .col-sm-12.text-right.pad-top-20
+                        button.btn.btn-donate.btn-block-xs.pad-horizontal-40#propose-form-button(data-lang="take-page.propose-submit" type="submit") Proponer
+
+        .row.pad-top-30
+          .col-sm-4
+            img(width="100%" data-lang-img="take-page.map-description")
+          .col-sm-8
+            .map
+              div#map(style="height: 400px")
+        .row.pad-vertical-40
+          .col-sm-12
+            .text-center
+              h3.license-title(data-lang="take-page.license.title") Licencia de Uso de Software
+              p.license-text(data-lang="take-page.license.description") Crees que nuestro software podria ser clave en tu empoderamiento o en el de tu comunidad.
+              .pad-top-20
+                a.btn.btn-donate.pad-horizontal-40(href="http://ucloudweb.org/" data-lang="take-page.license.button") Solicita Licencia
+
+    section#subscribe-newsletter
+      .container.pad-vertical-30
+        h2.no-margin.text-center(data-lang="take-page.open-source.title") UGI
+        h2.no-margin.text-center(data-lang="take-page.open-source.subtitle") Open Source Community
+        h4.pad-vertical-10.text-center(data-lang="take-page.open-source.text")
+        form.form#open-source-form(method="post")
+          .row
+            .col-sm-8.col-sm-push-2.col-md-6.col-md-push-3.form-group
+              input.form-control#email-newsletter(type='email' name="email" placeholder="E-mail")
+          .row
+            .col-sm-8.col-sm-push-2.col-md-6.col-md-push-3.form-group.text-center
+              button.btn.btn-subscribe.btn-block-xs#button-newsletter(type='submit' data-lang="take-page.open-source.button") Subscribe
+
+    include ./shared/_footer.pug
+
+    .modal.fade#confirmation-modal(role="dialog" tabindex="-1")
+      .modal-dialog(role="document")
+        .modal-content
+          .modal-header.bg-blue
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") &times;
+            h4.modal-title.text-center(data-lang="modal.confirmation.title")
+          .modal-body.bg-cream
+            h4.text-center(data-lang="modal.confirmation.subtitle") !Gracias por tomar la iniciativa!
+            p.text-center(data-lang="modal.confirmation.text") UGI evaluara tu propuesta y se pondra en contacto contigo.
+
+    .modal.selectable-modal.fade#software-modal(role="dialog" tabindex="-1")
+      .modal-dialog(role="document")
+        .modal-content
+          .modal-header.bg-blue
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") &times;
+            h4.modal-title.text-center() Software
+          .modal-body.bg-cream
+            .row
+              .col-sm-6
+                a.active(href="#")
+                  img(src="img/take-sw.png" width="100%")
+              .col-sm-6
+                a(href="#")
+                  img(src="img/take-kit.png" width="100%")
+            .row
+              .col-sm-12.text-right
+                button.btn.btn-primary(type="buton" data-dismiss="modal") Cerrar
+
+
+    include ./shared/_scripts.pug
+
+    script.
+
+        $(document).ready(function () {
+            $('.selectable-modal').each(function (id, modal) {
+                var id = $(modal).attr('id');
+                $(modal).find('a').click(function () {
+                    $(modal).find('.active').removeClass('active');
+                    $(this).addClass('active');
+                    var imageSource = $(this).find('img').attr('src');
+                    $('[data-target="#' + id +'"]').find('img').attr('src', imageSource);
+                })
+            });
+        });
+
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -8.44136, lng: -75.21390},
+                scrollwheel: false,
+                zoom: 6
+            });
+            var map2;
+            var marker;
+            $('#collapse-form').on('show.bs.collapse', function () {
+                $('#collapse-form-button').attr('disabled', 'disabled');
+            });
+
+            $('#collapse-form').on('shown.bs.collapse', function () {
+                $('#collapse-form-button').fadeOut();
+                if (!map2) {
+                    map2 = new google.maps.Map(document.getElementById('map-2'), {
+                        center: {lat: -8.44136, lng: -75.21390},
+                        scrollwheel: false,
+                        zoom: 6
+                    });
+                    map2.addListener('click', function (e) {
+                        if (marker)
+                            marker.setMap(null);
+                        marker = new google.maps.Marker({
+                            position: e.latLng,
+                            map: map2,
+                            title: 'Ubicación Marcada'
+                        });
+                        $('#location').val(e.latLng.toString());
+                    });
+                }
+            });
+        }
+    script(src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPqmq4wURmBxvAlzkYp4RtzC_dqFYk2U&callback=initMap" async defer)
