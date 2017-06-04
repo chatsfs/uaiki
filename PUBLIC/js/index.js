@@ -31,8 +31,8 @@ var lang = {
         },
         'whoarewe': {
             'title': '¿Quienes Somos?',
-            'text1': 'Üaiki Global Initiative es organizacion de beneficio social fundada en la ciudad de Boston, por emprendedores con raises provenientes de distintas partes del globo.',
-            'text2': 'Nuestra misión es conectar a las comunidades con mayores índices de marginación a los beneficios que nos brinda la era de la tecnología y la información.'
+            'text1': 'Üaiki Global Initiative es organizacion de beneficio social fundada por emprendedores con raices provenientes de distintas partes del globo.',
+            'text2': 'Nuestra misión es utilizar el desarrollo tecnológico y los benefícios de la era de la información para empoderara las poblaciones más vulnerables por medio de nuestro sistema de aprendizaje y así generar un desarrollo sostenible.'
         },
         'newsletter': {
             'title': 'MANTENTE INFORMADO. SUBSCRIBETE A NUESTRO BOLETÍN',
