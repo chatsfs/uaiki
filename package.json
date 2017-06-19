@@ -1,6 +1,7 @@
 {
   "name": "UaikiGI",
   "version": "0.1.0",
+  "private":true,
   "description": "Uaki Global Initiative Website",
   "main": "main.js",
   "scripts": {
